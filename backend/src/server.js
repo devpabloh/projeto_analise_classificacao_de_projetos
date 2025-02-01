@@ -2,17 +2,19 @@
 const express = require('express') // importando o express, framework para criar a api
 const mongoose = require('mongoose') // importando o mongoose, para conectar o banco de dados
 const cors = require('cors') // importando o cors, para permitir a comunicação entre os servidores express 
+const dotenv = require('dotenv')
 
 const app = express() // criando a api
 
 const PORT = process.env.PORT || 5000
 
-// middleware para CORS e JSON
+// middleware para CORS, doteenv e JSON
 app.use(cors()) 
 app.use(express.json())
+dotenv.config()
 
 // Conectando com o MongoDB
-mongoose.connect('mongodb+srv://devpabloh:Pablo84671514@cluster0.zta38.mongodb.net/meuprojeto?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb://localhost:27017/')
     .then(() => { console.log('Conectado ao MongoDB') })
     .catch((error) => { console.error(`Erro ao conectar ao MongoDB: ${error}`) });
 
