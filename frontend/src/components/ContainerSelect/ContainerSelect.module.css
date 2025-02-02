@@ -1,13 +1,12 @@
-.containerInput{
+.containerSelect{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 1rem;
+    gap: 0.5rem;
 }
 
-.containerInput input{
+.containerSelect select{
     border-radius: 6px;
     padding: 10px;
+    outline: none;
     border: 2px solid black;
 }
