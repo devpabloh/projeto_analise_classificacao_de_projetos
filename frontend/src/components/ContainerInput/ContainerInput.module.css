@@ -1,0 +1,13 @@
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.containerInput input{
+    border-radius: 6px;
+    padding: 10px;
+    
+}
