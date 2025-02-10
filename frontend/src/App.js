@@ -1,11 +1,11 @@
-
 import './App.css';
-import FormProjeto from './components/FormProjeto';
+// eslint-disable-next-line no-unused-vars
+import { testeDeConsumodeAPI } from './component/testeDeConsumodeAPI';
 
 function App() {
   return (
     <>
-    <FormProjeto/>
+        <testeDeConsumodeAPI/> 
     </>
   );
 }
